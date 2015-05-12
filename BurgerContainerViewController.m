@@ -8,13 +8,18 @@
 
 #import "BurgerContainerViewController.h"
 #import "MainMenuTableViewController.h"
+#import "MenuSelectionDelegate.h"
+#import "MyQuestionsViewController.h"
 #import "SearchQuestionsViewController.h"
 
-@interface BurgerContainerViewController ()
+@interface BurgerContainerViewController () <MenuSelectionDelegate>
 @property (strong, nonatomic) UIPanGestureRecognizer *slideGesture;
 @property (strong, nonatomic) UITapGestureRecognizer *tapToClose;
 @property (strong,nonatomic) UIViewController *topViewController;
 @property (strong, nonatomic) UIButton *burgerButton;
+@property (strong, nonatomic) MyQuestionsViewController *myQuestionVC;
+@property (strong, nonatomic) SearchQuestionsViewController *searchVC;
+
 @end
 
 const int MARGIN_BUFFER = 16;
@@ -32,19 +37,21 @@ const float FAST_ANIMATION_DURATION = 0.2;
   // Do any additional setup after loading the view.
   MainMenuTableViewController *mainMenuVC = [self.storyboard instantiateViewControllerWithIdentifier:@"MainMenuVC"];
   
-  // instantiate the 1st VC.
+  
+  // instantiate the MMTableVC.
   [self addChildViewController:mainMenuVC];
   mainMenuVC.view.frame = self.view.frame;
   [self.view addSubview:mainMenuVC.view];
   [mainMenuVC didMoveToParentViewController:self];
+  mainMenuVC.myDelegate = self;
   
   // instantiate the 2nd VC.
-  SearchQuestionsViewController *searchVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SearchVC"];
-  [self addChildViewController:searchVC];
+  self.searchVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SearchVC"];
+  [self addChildViewController:self.searchVC];
   mainMenuVC.view.frame = self.view.frame;
-  [self.view addSubview:searchVC.view];
+  [self.view addSubview:self.searchVC.view];
   [mainMenuVC didMoveToParentViewController:self];
-  self.topViewController = searchVC;
+  self.topViewController = self.searchVC;
   
   // instantiate the slide gesture controller.
   self.slideGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(slidePanelGesture:)];
@@ -62,6 +69,7 @@ const float FAST_ANIMATION_DURATION = 0.2;
 } //viewDidLoad
 
 
+#pragma mark- Button Methods.
 -(void) burgerButtonPressed {
   self.burgerButton.userInteractionEnabled = false;
   [UIView animateWithDuration:ANIMATION_DURATION animations:^{
@@ -83,6 +91,7 @@ const float FAST_ANIMATION_DURATION = 0.2;
   }];
 }
 
+#pragma mark- Pan Methods.
 -(void)slidePanelGesture: (UIPanGestureRecognizer *)pan {
   CGPoint translatedPoint = [pan translationInView:self.view];
   CGPoint velocity = [pan velocityInView:self.view];
@@ -120,10 +129,81 @@ const float FAST_ANIMATION_DURATION = 0.2;
   
 } // slidePanelGesture
 
+#pragma mark- Main Menu Navigation Methods.
+
+-(void) userDidSelectOption:(NSInteger)selection {
+  switch (selection) {
+    case 0:
+      if (self.topViewController != self.searchVC) {
+        [self switchToViewController:self.searchVC];
+        return;
+      }
+      break;
+    case 1:
+      if (self.topViewController != self.myQuestionVC) {
+        [self switchToViewController:self.myQuestionVC];
+        return;
+      }
+      break;
+      
+    default:
+      break;
+  }
+
+} // userDidSelectOption
+
+-(void) switchToViewController: (UIViewController *)destinationVC {
+  [UIView animateWithDuration:FAST_ANIMATION_DURATION animations:^{
+    
+    self.topViewController.view.frame = CGRectMake(self.view.frame.size.width, 0, self.view.frame.size.width, self.view.frame.size.height);
+    
+  } completion:^(BOOL finished) {
+    destinationVC.view.frame = self.topViewController.view.frame;
+    
+    [self.topViewController.view removeGestureRecognizer:self.slideGesture];
+    [self.burgerButton removeFromSuperview];
+    [self.topViewController willMoveToParentViewController:nil];
+    [self.topViewController.view removeFromSuperview];
+    [self.topViewController removeFromParentViewController];
+    
+    self.topViewController = destinationVC;
+    [self addChildViewController:self.topViewController];
+    [self.view addSubview:self.topViewController.view];
+    [self.topViewController didMoveToParentViewController:self];
+    [self.topViewController.view addSubview:self.burgerButton];
+    [self.topViewController.view addGestureRecognizer:self.slideGesture];
+    
+    [UIView animateWithDuration:ANIMATION_DURATION animations:^{
+      self.topViewController.view.center = self.view.center;
+    } completion:^(BOOL finished) {
+      self.burgerButton.userInteractionEnabled = true;
+    }];
+  }];
+} // switchToViewController
+
+#pragma mark- Lazy Loading Methods.
+-(MyQuestionsViewController *) myQuestionVC {
+  if (_myQuestionVC != nil) {
+    return _myQuestionVC;
+  } else {
+    _myQuestionVC = [self.storyboard instantiateViewControllerWithIdentifier:@"MyQuestionVC"];
+    return _myQuestionVC;
+  }
+}
+
+-(SearchQuestionsViewController *) searchVC {
+  if (_searchVC != nil) {
+    return _searchVC;
+  } else {
+    self.searchVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SearchVC"];
+    return _searchVC;
+  }
+}
+
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
-}
+} // didReceiveMemoryWarning
 
 /*
  #pragma mark - Navigation

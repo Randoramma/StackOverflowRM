@@ -54,7 +54,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="seW-2j-kHf" id="eMI-Re-1et">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Search Questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FY6-Rn-5NX" userLabel="Search Questions">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="My Questions" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="FY6-Rn-5NX">
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -91,9 +91,27 @@
             <point key="canvasLocation" x="818" y="415"/>
         </scene>
         <!--My Questions View Controller-->
+        <scene sceneID="syk-gV-Ion">
+            <objects>
+                <viewController storyboardIdentifier="MyQuestionVC" id="n60-e8-gAV" customClass="MyQuestionsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1f0-r6-8rl"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZlS-tj-m0a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vuz-TS-jzO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.11450485578480352" blue="0.019493555543159125" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8vt-yh-C75" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="1077"/>
+        </scene>
+        <!--Search Questions View Controller-->
         <scene sceneID="Evs-js-v64">
             <objects>
-                <viewController storyboardIdentifier="SearchVC" id="dhH-ad-bZu" customClass="MyQuestionsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchVC" id="dhH-ad-bZu" customClass="SearchQuestionsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oN2-Nt-NTj"/>
                         <viewControllerLayoutGuide type="bottom" id="Sod-1u-Zh4"/>
@@ -109,4 +127,5 @@
             <point key="canvasLocation" x="1452" y="415"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
 </document>

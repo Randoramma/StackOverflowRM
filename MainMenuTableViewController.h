@@ -11,6 +11,7 @@
 
 @interface MainMenuTableViewController : UITableViewController
 
+// weak assignment to the delegate property.  "The delegator should never own the delegate."
 @property (weak, nonatomic) id<MenuSelectionDelegate> myDelegate;
 
 @end
