@@ -9,11 +9,16 @@
 /* Begin PBXBuildFile section */
 		D064CCC81B01C79F00771D60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCC71B01C79F00771D60 /* main.m */; };
 		D064CCCB1B01C79F00771D60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCCA1B01C79F00771D60 /* AppDelegate.m */; };
-		D064CCCE1B01C79F00771D60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCCD1B01C79F00771D60 /* ViewController.m */; };
 		D064CCD11B01C79F00771D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D064CCCF1B01C79F00771D60 /* Main.storyboard */; };
 		D064CCD31B01C79F00771D60 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D064CCD21B01C79F00771D60 /* Images.xcassets */; };
 		D064CCD61B01C79F00771D60 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D064CCD41B01C79F00771D60 /* LaunchScreen.xib */; };
 		D064CCE21B01C79F00771D60 /* StackOverflowRMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCE11B01C79F00771D60 /* StackOverflowRMTests.m */; };
+		D064CCED1B01C97500771D60 /* BurgerContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCEC1B01C97500771D60 /* BurgerContainerViewController.m */; };
+		D064CCF31B01CA2D00771D60 /* MainMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCF21B01CA2D00771D60 /* MainMenuTableViewController.m */; };
+		D064CCF61B01CA5300771D60 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCF51B01CA5300771D60 /* LoginViewController.m */; };
+		D064CCF91B01CA6B00771D60 /* OauthWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCF81B01CA6B00771D60 /* OauthWebViewController.m */; };
+		D064CCFC1B01CA8D00771D60 /* SearchQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCFB1B01CA8D00771D60 /* SearchQuestionsViewController.m */; };
+		D064CCFF1B01CAB500771D60 /* MyQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCFE1B01CAB500771D60 /* MyQuestionsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +37,25 @@
 		D064CCC71B01C79F00771D60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D064CCC91B01C79F00771D60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D064CCCA1B01C79F00771D60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D064CCCC1B01C79F00771D60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D064CCCD1B01C79F00771D60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D064CCD01B01C79F00771D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D064CCD21B01C79F00771D60 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D064CCD51B01C79F00771D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D064CCDB1B01C79F00771D60 /* StackOverflowRMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowRMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D064CCE01B01C79F00771D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D064CCE11B01C79F00771D60 /* StackOverflowRMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOverflowRMTests.m; sourceTree = "<group>"; };
+		D064CCEB1B01C97500771D60 /* BurgerContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BurgerContainerViewController.h; path = ../BurgerContainerViewController.h; sourceTree = "<group>"; };
+		D064CCEC1B01C97500771D60 /* BurgerContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BurgerContainerViewController.m; path = ../BurgerContainerViewController.m; sourceTree = "<group>"; };
+		D064CCF11B01CA2D00771D60 /* MainMenuTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainMenuTableViewController.h; path = ../MainMenuTableViewController.h; sourceTree = "<group>"; };
+		D064CCF21B01CA2D00771D60 /* MainMenuTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainMenuTableViewController.m; path = ../MainMenuTableViewController.m; sourceTree = "<group>"; };
+		D064CCF41B01CA5300771D60 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = ../LoginViewController.h; sourceTree = "<group>"; };
+		D064CCF51B01CA5300771D60 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
+		D064CCF71B01CA6B00771D60 /* OauthWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OauthWebViewController.h; path = ../OauthWebViewController.h; sourceTree = "<group>"; };
+		D064CCF81B01CA6B00771D60 /* OauthWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OauthWebViewController.m; path = ../OauthWebViewController.m; sourceTree = "<group>"; };
+		D064CCFA1B01CA8D00771D60 /* SearchQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchQuestionsViewController.h; path = ../SearchQuestionsViewController.h; sourceTree = "<group>"; };
+		D064CCFB1B01CA8D00771D60 /* SearchQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchQuestionsViewController.m; path = ../SearchQuestionsViewController.m; sourceTree = "<group>"; };
+		D064CCFD1B01CAB500771D60 /* MyQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyQuestionsViewController.h; path = ../MyQuestionsViewController.h; sourceTree = "<group>"; };
+		D064CCFE1B01CAB500771D60 /* MyQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyQuestionsViewController.m; path = ../MyQuestionsViewController.m; sourceTree = "<group>"; };
+		D064CD001B01CADA00771D60 /* MenuSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MenuSelectionDelegate.h; path = ../MenuSelectionDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +97,11 @@
 		D064CCC41B01C79F00771D60 /* StackOverflowRM */ = {
 			isa = PBXGroup;
 			children = (
+				D064CCEF1B01C99D00771D60 /* View */,
+				D064CCF01B01C99D00771D60 /* Model */,
+				D064CCEE1B01C99D00771D60 /* Controller */,
 				D064CCC91B01C79F00771D60 /* AppDelegate.h */,
 				D064CCCA1B01C79F00771D60 /* AppDelegate.m */,
-				D064CCCC1B01C79F00771D60 /* ViewController.h */,
-				D064CCCD1B01C79F00771D60 /* ViewController.m */,
 				D064CCCF1B01C79F00771D60 /* Main.storyboard */,
 				D064CCD21B01C79F00771D60 /* Images.xcassets */,
 				D064CCD41B01C79F00771D60 /* LaunchScreen.xib */,
@@ -118,6 +135,43 @@
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		D064CCEE1B01C99D00771D60 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D064CD001B01CADA00771D60 /* MenuSelectionDelegate.h */,
+				D064CCFD1B01CAB500771D60 /* MyQuestionsViewController.h */,
+				D064CCFE1B01CAB500771D60 /* MyQuestionsViewController.m */,
+				D064CCFA1B01CA8D00771D60 /* SearchQuestionsViewController.h */,
+				D064CCFB1B01CA8D00771D60 /* SearchQuestionsViewController.m */,
+				D064CCF71B01CA6B00771D60 /* OauthWebViewController.h */,
+				D064CCF81B01CA6B00771D60 /* OauthWebViewController.m */,
+				D064CCF41B01CA5300771D60 /* LoginViewController.h */,
+				D064CCF51B01CA5300771D60 /* LoginViewController.m */,
+				D064CCF11B01CA2D00771D60 /* MainMenuTableViewController.h */,
+				D064CCF21B01CA2D00771D60 /* MainMenuTableViewController.m */,
+				D064CCEB1B01C97500771D60 /* BurgerContainerViewController.h */,
+				D064CCEC1B01C97500771D60 /* BurgerContainerViewController.m */,
+			);
+			name = Controller;
+			path = StackOverflowRM.xcodeproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		D064CCEF1B01C99D00771D60 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = StackOverflowRM.xcodeproj;
+			sourceTree = SOURCE_ROOT;
+		};
+		D064CCF01B01C99D00771D60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			path = StackOverflowRM.xcodeproj;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -219,9 +273,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D064CCCE1B01C79F00771D60 /* ViewController.m in Sources */,
 				D064CCCB1B01C79F00771D60 /* AppDelegate.m in Sources */,
+				D064CCF91B01CA6B00771D60 /* OauthWebViewController.m in Sources */,
+				D064CCFC1B01CA8D00771D60 /* SearchQuestionsViewController.m in Sources */,
+				D064CCF31B01CA2D00771D60 /* MainMenuTableViewController.m in Sources */,
+				D064CCED1B01C97500771D60 /* BurgerContainerViewController.m in Sources */,
 				D064CCC81B01C79F00771D60 /* main.m in Sources */,
+				D064CCFF1B01CAB500771D60 /* MyQuestionsViewController.m in Sources */,
+				D064CCF61B01CA5300771D60 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

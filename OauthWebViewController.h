@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  OauthWebViewController.h
 //  StackOverflowRM
 //
 //  Created by Randy McLain on 5/11/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface OauthWebViewController : UIViewController
 
 @end
-
