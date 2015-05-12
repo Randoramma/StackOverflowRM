@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D064CCC81B01C79F00771D60 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCC71B01C79F00771D60 /* main.m */; };
+		D064CCCB1B01C79F00771D60 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCCA1B01C79F00771D60 /* AppDelegate.m */; };
+		D064CCCE1B01C79F00771D60 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCCD1B01C79F00771D60 /* ViewController.m */; };
+		D064CCD11B01C79F00771D60 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D064CCCF1B01C79F00771D60 /* Main.storyboard */; };
+		D064CCD31B01C79F00771D60 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D064CCD21B01C79F00771D60 /* Images.xcassets */; };
+		D064CCD61B01C79F00771D60 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D064CCD41B01C79F00771D60 /* LaunchScreen.xib */; };
+		D064CCE21B01C79F00771D60 /* StackOverflowRMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCE11B01C79F00771D60 /* StackOverflowRMTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D064CCDC1B01C79F00771D60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D064CCBA1B01C79F00771D60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D064CCC11B01C79F00771D60;
+			remoteInfo = StackOverflowRM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D064CCC21B01C79F00771D60 /* StackOverflowRM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowRM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D064CCC61B01C79F00771D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D064CCC71B01C79F00771D60 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D064CCC91B01C79F00771D60 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D064CCCA1B01C79F00771D60 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D064CCCC1B01C79F00771D60 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D064CCCD1B01C79F00771D60 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D064CCD01B01C79F00771D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D064CCD21B01C79F00771D60 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D064CCD51B01C79F00771D60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D064CCDB1B01C79F00771D60 /* StackOverflowRMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowRMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D064CCE01B01C79F00771D60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D064CCE11B01C79F00771D60 /* StackOverflowRMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOverflowRMTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D064CCBF1B01C79F00771D60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D064CCD81B01C79F00771D60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D064CCB91B01C79F00771D60 = {
+			isa = PBXGroup;
+			children = (
+				D064CCC41B01C79F00771D60 /* StackOverflowRM */,
+				D064CCDE1B01C79F00771D60 /* StackOverflowRMTests */,
+				D064CCC31B01C79F00771D60 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D064CCC31B01C79F00771D60 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D064CCC21B01C79F00771D60 /* StackOverflowRM.app */,
+				D064CCDB1B01C79F00771D60 /* StackOverflowRMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D064CCC41B01C79F00771D60 /* StackOverflowRM */ = {
+			isa = PBXGroup;
+			children = (
+				D064CCC91B01C79F00771D60 /* AppDelegate.h */,
+				D064CCCA1B01C79F00771D60 /* AppDelegate.m */,
+				D064CCCC1B01C79F00771D60 /* ViewController.h */,
+				D064CCCD1B01C79F00771D60 /* ViewController.m */,
+				D064CCCF1B01C79F00771D60 /* Main.storyboard */,
+				D064CCD21B01C79F00771D60 /* Images.xcassets */,
+				D064CCD41B01C79F00771D60 /* LaunchScreen.xib */,
+				D064CCC51B01C79F00771D60 /* Supporting Files */,
+			);
+			path = StackOverflowRM;
+			sourceTree = "<group>";
+		};
+		D064CCC51B01C79F00771D60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D064CCC61B01C79F00771D60 /* Info.plist */,
+				D064CCC71B01C79F00771D60 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D064CCDE1B01C79F00771D60 /* StackOverflowRMTests */ = {
+			isa = PBXGroup;
+			children = (
+				D064CCE11B01C79F00771D60 /* StackOverflowRMTests.m */,
+				D064CCDF1B01C79F00771D60 /* Supporting Files */,
+			);
+			path = StackOverflowRMTests;
+			sourceTree = "<group>";
+		};
+		D064CCDF1B01C79F00771D60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D064CCE01B01C79F00771D60 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D064CCC11B01C79F00771D60 /* StackOverflowRM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D064CCE51B01C79F00771D60 /* Build configuration list for PBXNativeTarget "StackOverflowRM" */;
+			buildPhases = (
+				D064CCBE1B01C79F00771D60 /* Sources */,
+				D064CCBF1B01C79F00771D60 /* Frameworks */,
+				D064CCC01B01C79F00771D60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StackOverflowRM;
+			productName = StackOverflowRM;
+			productReference = D064CCC21B01C79F00771D60 /* StackOverflowRM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D064CCDA1B01C79F00771D60 /* StackOverflowRMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D064CCE81B01C79F00771D60 /* Build configuration list for PBXNativeTarget "StackOverflowRMTests" */;
+			buildPhases = (
+				D064CCD71B01C79F00771D60 /* Sources */,
+				D064CCD81B01C79F00771D60 /* Frameworks */,
+				D064CCD91B01C79F00771D60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D064CCDD1B01C79F00771D60 /* PBXTargetDependency */,
+			);
+			name = StackOverflowRMTests;
+			productName = StackOverflowRMTests;
+			productReference = D064CCDB1B01C79F00771D60 /* StackOverflowRMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D064CCBA1B01C79F00771D60 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Randy McLain";
+				TargetAttributes = {
+					D064CCC11B01C79F00771D60 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					D064CCDA1B01C79F00771D60 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = D064CCC11B01C79F00771D60;
+					};
+				};
+			};
+			buildConfigurationList = D064CCBD1B01C79F00771D60 /* Build configuration list for PBXProject "StackOverflowRM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D064CCB91B01C79F00771D60;
+			productRefGroup = D064CCC31B01C79F00771D60 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D064CCC11B01C79F00771D60 /* StackOverflowRM */,
+				D064CCDA1B01C79F00771D60 /* StackOverflowRMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D064CCC01B01C79F00771D60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D064CCD11B01C79F00771D60 /* Main.storyboard in Resources */,
+				D064CCD61B01C79F00771D60 /* LaunchScreen.xib in Resources */,
+				D064CCD31B01C79F00771D60 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D064CCD91B01C79F00771D60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D064CCBE1B01C79F00771D60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D064CCCE1B01C79F00771D60 /* ViewController.m in Sources */,
+				D064CCCB1B01C79F00771D60 /* AppDelegate.m in Sources */,
+				D064CCC81B01C79F00771D60 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D064CCD71B01C79F00771D60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D064CCE21B01C79F00771D60 /* StackOverflowRMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D064CCDD1B01C79F00771D60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D064CCC11B01C79F00771D60 /* StackOverflowRM */;
+			targetProxy = D064CCDC1B01C79F00771D60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D064CCCF1B01C79F00771D60 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D064CCD01B01C79F00771D60 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D064CCD41B01C79F00771D60 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D064CCD51B01C79F00771D60 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D064CCE31B01C79F00771D60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D064CCE41B01C79F00771D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D064CCE61B01C79F00771D60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StackOverflowRM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D064CCE71B01C79F00771D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = StackOverflowRM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D064CCE91B01C79F00771D60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StackOverflowRMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverflowRM.app/StackOverflowRM";
+			};
+			name = Debug;
+		};
+		D064CCEA1B01C79F00771D60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = StackOverflowRMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StackOverflowRM.app/StackOverflowRM";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D064CCBD1B01C79F00771D60 /* Build configuration list for PBXProject "StackOverflowRM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D064CCE31B01C79F00771D60 /* Debug */,
+				D064CCE41B01C79F00771D60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D064CCE51B01C79F00771D60 /* Build configuration list for PBXNativeTarget "StackOverflowRM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D064CCE61B01C79F00771D60 /* Debug */,
+				D064CCE71B01C79F00771D60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D064CCE81B01C79F00771D60 /* Build configuration list for PBXNativeTarget "StackOverflowRMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D064CCE91B01C79F00771D60 /* Debug */,
+				D064CCEA1B01C79F00771D60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D064CCBA1B01C79F00771D60 /* Project object */;
+}
