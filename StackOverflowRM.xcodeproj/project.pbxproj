@@ -56,6 +56,7 @@
 		D064CCFD1B01CAB500771D60 /* MyQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyQuestionsViewController.h; path = ../MyQuestionsViewController.h; sourceTree = "<group>"; };
 		D064CCFE1B01CAB500771D60 /* MyQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyQuestionsViewController.m; path = ../MyQuestionsViewController.m; sourceTree = "<group>"; };
 		D064CD001B01CADA00771D60 /* MenuSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MenuSelectionDelegate.h; path = ../MenuSelectionDelegate.h; sourceTree = "<group>"; };
+		D064CD021B025CDB00771D60 /* protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = protected.h; path = ../protected.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,7 @@
 		D064CCC51B01C79F00771D60 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D064CD021B025CDB00771D60 /* protected.h */,
 				D064CCC61B01C79F00771D60 /* Info.plist */,
 				D064CCC71B01C79F00771D60 /* main.m */,
 			);
