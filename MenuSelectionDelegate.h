@@ -10,6 +10,7 @@
 
 @protocol MenuSelectionDelegate <NSObject>
 
+#warning Comment better.  "Somehow use this method to get the communication going?
 -(void)userDidSelectOption:(NSInteger)selection;
 
 @end
