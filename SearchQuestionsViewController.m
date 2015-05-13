@@ -7,8 +7,12 @@
 //
 
 #import "SearchQuestionsViewController.h"
+#import "StackOverFlowService.h"
 
-@interface SearchQuestionsViewController ()
+@interface SearchQuestionsViewController () <UISearchBarDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *searchViewTable;
+@property (weak, nonatomic) IBOutlet UISearchBar *searchBarSearchView;
 
 @end
 
@@ -16,7 +20,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+  self.searchBarSearchView.delegate = self; 
     // Do any additional setup after loading the view.
+}
+
+-(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
+  [StackOverFlowService fetchQuestionForSearchTerm:searchBar.text completionHandler:^(NSArray *items, NSString *error) {
+    
+    // take array of query objects and reformat the tableview based on what comes back.
+    
+    // apply each query to a cell
+    
+    // reload tableView
+  }];
+  //
 }
 
 - (void)didReceiveMemoryWarning {

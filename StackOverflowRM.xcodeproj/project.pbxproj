@@ -19,6 +19,9 @@
 		D064CCF91B01CA6B00771D60 /* OauthWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCF81B01CA6B00771D60 /* OauthWebViewController.m */; };
 		D064CCFC1B01CA8D00771D60 /* SearchQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCFB1B01CA8D00771D60 /* SearchQuestionsViewController.m */; };
 		D064CCFF1B01CAB500771D60 /* MyQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCFE1B01CAB500771D60 /* MyQuestionsViewController.m */; };
+		D0F0ACEC1B030F05004A8A04 /* StackOverFlowService.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F0ACEB1B030F05004A8A04 /* StackOverFlowService.m */; };
+		D0F0ACEF1B03B351004A8A04 /* JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F0ACEE1B03B351004A8A04 /* JSONParser.m */; };
+		D0F0ACF21B03B77D004A8A04 /* SOQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F0ACF11B03B77D004A8A04 /* SOQuery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,12 @@
 		D064CCFE1B01CAB500771D60 /* MyQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyQuestionsViewController.m; path = ../MyQuestionsViewController.m; sourceTree = "<group>"; };
 		D064CD001B01CADA00771D60 /* MenuSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MenuSelectionDelegate.h; path = ../MenuSelectionDelegate.h; sourceTree = "<group>"; };
 		D064CD021B025CDB00771D60 /* protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = protected.h; path = ../protected.h; sourceTree = "<group>"; };
+		D0F0ACEA1B030F05004A8A04 /* StackOverFlowService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StackOverFlowService.h; path = ../StackOverFlowService.h; sourceTree = "<group>"; };
+		D0F0ACEB1B030F05004A8A04 /* StackOverFlowService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StackOverFlowService.m; path = ../StackOverFlowService.m; sourceTree = "<group>"; };
+		D0F0ACED1B03B351004A8A04 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONParser.h; path = ../JSONParser.h; sourceTree = "<group>"; };
+		D0F0ACEE1B03B351004A8A04 /* JSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JSONParser.m; path = ../JSONParser.m; sourceTree = "<group>"; };
+		D0F0ACF01B03B77C004A8A04 /* SOQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SOQuery.h; path = ../SOQuery.h; sourceTree = "<group>"; };
+		D0F0ACF11B03B77D004A8A04 /* SOQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SOQuery.m; path = ../SOQuery.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +178,12 @@
 		D064CCF01B01C99D00771D60 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D0F0ACF01B03B77C004A8A04 /* SOQuery.h */,
+				D0F0ACF11B03B77D004A8A04 /* SOQuery.m */,
+				D0F0ACED1B03B351004A8A04 /* JSONParser.h */,
+				D0F0ACEE1B03B351004A8A04 /* JSONParser.m */,
+				D0F0ACEA1B030F05004A8A04 /* StackOverFlowService.h */,
+				D0F0ACEB1B030F05004A8A04 /* StackOverFlowService.m */,
 				D064CD001B01CADA00771D60 /* MenuSelectionDelegate.h */,
 			);
 			name = Model;
@@ -275,13 +290,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0F0ACEC1B030F05004A8A04 /* StackOverFlowService.m in Sources */,
 				D064CCCB1B01C79F00771D60 /* AppDelegate.m in Sources */,
 				D064CCF91B01CA6B00771D60 /* OauthWebViewController.m in Sources */,
 				D064CCFC1B01CA8D00771D60 /* SearchQuestionsViewController.m in Sources */,
 				D064CCF31B01CA2D00771D60 /* MainMenuTableViewController.m in Sources */,
+				D0F0ACF21B03B77D004A8A04 /* SOQuery.m in Sources */,
 				D064CCED1B01C97500771D60 /* BurgerContainerViewController.m in Sources */,
 				D064CCC81B01C79F00771D60 /* main.m in Sources */,
 				D064CCFF1B01CAB500771D60 /* MyQuestionsViewController.m in Sources */,
+				D0F0ACEF1B03B351004A8A04 /* JSONParser.m in Sources */,
 				D064CCF61B01CA5300771D60 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
