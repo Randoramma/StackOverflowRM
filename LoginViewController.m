@@ -7,6 +7,7 @@
 //
 
 #import "LoginViewController.h"
+#import "OauthWebViewController.h"
 
 @interface LoginViewController ()
 
@@ -17,6 +18,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+}
+- (IBAction)loginWasPressed:(id)sender {
+  OauthWebViewController *webLoginVC = [[OauthWebViewController alloc] init];
+  webLoginVC.view.frame = self.view.frame;
+  webLoginVC.view.backgroundColor = [UIColor whiteColor];
+  
+  [self presentViewController:webLoginVC animated:true completion:^{
+  }];
 }
 
 - (void)didReceiveMemoryWarning {

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "BurgerContainerViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Override point for customization after application launch.
+  NSString *authToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"token"];
+  if (authToken) {
+    
+    NSLog(@"%@", [self.window.rootViewController class]);
+    UIStoryboard *storyboard = self.window.rootViewController.storyboard;
+    BurgerContainerViewController *burgerVC = [storyboard instantiateViewControllerWithIdentifier:@"BurgerContainerVC"];
+    self.window.rootViewController = burgerVC;
+  }
+
   return YES;
 }
 

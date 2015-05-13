@@ -141,7 +141,6 @@
 		D064CCEE1B01C99D00771D60 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				D064CD001B01CADA00771D60 /* MenuSelectionDelegate.h */,
 				D064CCFD1B01CAB500771D60 /* MyQuestionsViewController.h */,
 				D064CCFE1B01CAB500771D60 /* MyQuestionsViewController.m */,
 				D064CCFA1B01CA8D00771D60 /* SearchQuestionsViewController.h */,
@@ -170,6 +169,7 @@
 		D064CCF01B01C99D00771D60 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D064CD001B01CADA00771D60 /* MenuSelectionDelegate.h */,
 			);
 			name = Model;
 			path = StackOverflowRM.xcodeproj;
@@ -479,6 +479,7 @@
 				D064CCE71B01C79F00771D60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D064CCE81B01C79F00771D60 /* Build configuration list for PBXNativeTarget "StackOverflowRMTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +488,7 @@
 				D064CCEA1B01C79F00771D60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
