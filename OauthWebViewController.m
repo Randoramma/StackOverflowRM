@@ -7,8 +7,12 @@
 //
 
 #import "OauthWebViewController.h"
+#import "BurgerContainerViewController.h"
+#import <WebKit/WebKit.h>
 
-@interface OauthWebViewController ()
+@interface OauthWebViewController () <WKNavigationDelegate>
+@property (strong, nonatomic) WKWebView *myWebView;
+@property (strong, nonatomic) BurgerContainerViewController *myBurgerView;
 
 @end
 
@@ -16,7 +20,34 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  self.myWebView = [[WKWebView alloc] initWithFrame:self.view.frame];
+  [self.view addSubview:self.myWebView];
+  // become the webview's navigation delegate
+  self.myWebView.navigationDelegate = self;
+  
+  [self.myWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"https://stackexchange.com/oauth/dialog?client_id=4799&scope=no_expiry&redirect_uri=https://stackexchange.com/oauth/login_success"]]];
+}
+
+-(void)webView:(WKWebView *)webView decidePolicyForNavigationAction:(WKNavigationAction *)navigationAction decisionHandler:(void (^)(WKNavigationActionPolicy))decisionHandler {
+  NSURLRequest *authRequest = navigationAction.request;
+  NSURL *theURL = authRequest.URL;
+  NSLog(@"%@", theURL);
+  decisionHandler(WKNavigationActionPolicyAllow);
+  // if the return URL contains the keywords @"access_token" then we have recieved a good key.
+  
+  if ([theURL.description containsString:@"access_token"]) {
+    // parse up the return string to recieve our key.
+    NSArray *theComponents = [[theURL description] componentsSeparatedByString:@"="];
+    NSString *theToken = theComponents.lastObject;
+#warning Delete this log message.
+    NSLog(@"%@",theToken);
+    [[NSUserDefaults standardUserDefaults] setObject:theToken forKey:@"token"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+ 
+    [self dismissViewControllerAnimated:true completion:^{
+
+    }];
+  }
 }
 
 - (void)didReceiveMemoryWarning {
