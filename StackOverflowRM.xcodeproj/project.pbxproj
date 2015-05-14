@@ -17,8 +17,8 @@
 		D064CCF31B01CA2D00771D60 /* MainMenuTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCF21B01CA2D00771D60 /* MainMenuTableViewController.m */; };
 		D064CCF61B01CA5300771D60 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCF51B01CA5300771D60 /* LoginViewController.m */; };
 		D064CCF91B01CA6B00771D60 /* OauthWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCF81B01CA6B00771D60 /* OauthWebViewController.m */; };
-		D064CCFC1B01CA8D00771D60 /* SearchQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCFB1B01CA8D00771D60 /* SearchQuestionsViewController.m */; };
 		D064CCFF1B01CAB500771D60 /* MyQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCFE1B01CAB500771D60 /* MyQuestionsViewController.m */; };
+		D067260D1B0512D00011077D /* SearchQuestionsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D067260C1B0512D00011077D /* SearchQuestionsTVC.m */; };
 		D0F0ACEC1B030F05004A8A04 /* StackOverFlowService.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F0ACEB1B030F05004A8A04 /* StackOverFlowService.m */; };
 		D0F0ACEF1B03B351004A8A04 /* JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F0ACEE1B03B351004A8A04 /* JSONParser.m */; };
 		D0F0ACF21B03B77D004A8A04 /* SOQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F0ACF11B03B77D004A8A04 /* SOQuery.m */; };
@@ -58,12 +58,12 @@
 		D064CCF51B01CA5300771D60 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = ../LoginViewController.m; sourceTree = "<group>"; };
 		D064CCF71B01CA6B00771D60 /* OauthWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OauthWebViewController.h; path = ../OauthWebViewController.h; sourceTree = "<group>"; };
 		D064CCF81B01CA6B00771D60 /* OauthWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OauthWebViewController.m; path = ../OauthWebViewController.m; sourceTree = "<group>"; };
-		D064CCFA1B01CA8D00771D60 /* SearchQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchQuestionsViewController.h; path = ../SearchQuestionsViewController.h; sourceTree = "<group>"; };
-		D064CCFB1B01CA8D00771D60 /* SearchQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchQuestionsViewController.m; path = ../SearchQuestionsViewController.m; sourceTree = "<group>"; };
 		D064CCFD1B01CAB500771D60 /* MyQuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyQuestionsViewController.h; path = ../MyQuestionsViewController.h; sourceTree = "<group>"; };
 		D064CCFE1B01CAB500771D60 /* MyQuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyQuestionsViewController.m; path = ../MyQuestionsViewController.m; sourceTree = "<group>"; };
 		D064CD001B01CADA00771D60 /* MenuSelectionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MenuSelectionDelegate.h; path = ../MenuSelectionDelegate.h; sourceTree = "<group>"; };
 		D064CD021B025CDB00771D60 /* protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = protected.h; path = ../protected.h; sourceTree = "<group>"; };
+		D067260B1B0512D00011077D /* SearchQuestionsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchQuestionsTVC.h; path = ../SearchQuestionsTVC.h; sourceTree = "<group>"; };
+		D067260C1B0512D00011077D /* SearchQuestionsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchQuestionsTVC.m; path = ../SearchQuestionsTVC.m; sourceTree = "<group>"; };
 		D0F0ACEA1B030F05004A8A04 /* StackOverFlowService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StackOverFlowService.h; path = ../StackOverFlowService.h; sourceTree = "<group>"; };
 		D0F0ACEB1B030F05004A8A04 /* StackOverFlowService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StackOverFlowService.m; path = ../StackOverFlowService.m; sourceTree = "<group>"; };
 		D0F0ACED1B03B351004A8A04 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONParser.h; path = ../JSONParser.h; sourceTree = "<group>"; };
@@ -174,10 +174,10 @@
 		D064CCEE1B01C99D00771D60 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				D067260B1B0512D00011077D /* SearchQuestionsTVC.h */,
+				D067260C1B0512D00011077D /* SearchQuestionsTVC.m */,
 				D064CCFD1B01CAB500771D60 /* MyQuestionsViewController.h */,
 				D064CCFE1B01CAB500771D60 /* MyQuestionsViewController.m */,
-				D064CCFA1B01CA8D00771D60 /* SearchQuestionsViewController.h */,
-				D064CCFB1B01CA8D00771D60 /* SearchQuestionsViewController.m */,
 				D064CCF71B01CA6B00771D60 /* OauthWebViewController.h */,
 				D064CCF81B01CA6B00771D60 /* OauthWebViewController.m */,
 				D064CCF41B01CA5300771D60 /* LoginViewController.h */,
@@ -350,9 +350,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0F0ACEC1B030F05004A8A04 /* StackOverFlowService.m in Sources */,
+				D067260D1B0512D00011077D /* SearchQuestionsTVC.m in Sources */,
 				D064CCCB1B01C79F00771D60 /* AppDelegate.m in Sources */,
 				D064CCF91B01CA6B00771D60 /* OauthWebViewController.m in Sources */,
-				D064CCFC1B01CA8D00771D60 /* SearchQuestionsViewController.m in Sources */,
 				D064CCF31B01CA2D00771D60 /* MainMenuTableViewController.m in Sources */,
 				D0F0ACF21B03B77D004A8A04 /* SOQuery.m in Sources */,
 				D064CCED1B01C97500771D60 /* BurgerContainerViewController.m in Sources */,

@@ -10,7 +10,7 @@
 #import "MainMenuTableViewController.h"
 #import "MenuSelectionDelegate.h"
 #import "MyQuestionsViewController.h"
-#import "SearchQuestionsViewController.h"
+#import "SearchQuestionsTVC.h"
 
 @interface BurgerContainerViewController () <MenuSelectionDelegate>
 @property (strong, nonatomic) UIPanGestureRecognizer *slideGesture;
@@ -18,7 +18,7 @@
 @property (strong,nonatomic) UIViewController *topViewController;
 @property (strong, nonatomic) UIButton *burgerButton;
 @property (strong, nonatomic) MyQuestionsViewController *myQuestionVC;
-@property (strong, nonatomic) SearchQuestionsViewController *searchVC;
+@property (strong, nonatomic) SearchQuestionsTVC *searchVC;
 
 @end
 
@@ -191,7 +191,7 @@ const float FAST_ANIMATION_DURATION = 0.2;
   }
 }
 
--(SearchQuestionsViewController *) searchVC {
+-(SearchQuestionsTVC *) searchVC {
   if (_searchVC != nil) {
     return _searchVC;
   } else {

@@ -8,11 +8,11 @@
 
 #import "StackOverFlowService.h"
 #import "JSONParser.h"
+#import "Pods/AFNetworking/AFNetworking/AFNetworking.h"
 
 @implementation StackOverFlowService
 
-+(void)fetchQuestionForSearchTerm:(NSString*)searchTerm completionHandler:(void (^)(NSArray *items, NSString *error))completionHandler {
-  
++(void)fetchQuestionForSearchTerm:(NSString*)searchTerm completionHandler:(void (^)(NSArray *items, NSString *error))SearchBarCompletionHandler {
   NSString *url = @"https://api.stackexchange.com/2.2/search?order=desc&sort=activity&intitle=";
   NSString *searchURL = [url stringByAppendingString:searchTerm];
   NSString *token = [[NSUserDefaults standardUserDefaults] objectForKey:@"token"];
@@ -27,10 +27,10 @@
     
     if(!error) {
       NSArray *theReturnedObjects = [JSONParser parseQueriesFromJSON:data];
-      completionHandler(theReturnedObjects, nil);
+      SearchBarCompletionHandler(theReturnedObjects, nil);
     } else {
       
-      completionHandler(nil, @"There was an error");
+      SearchBarCompletionHandler(nil, @"There was an error");
     }
     #warning Delete NSLog statement.
     NSLog(@"%@", response);

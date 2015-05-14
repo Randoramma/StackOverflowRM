@@ -8,6 +8,7 @@
 
 #import "JSONParser.h"
 #import "SOQuery.h"
+#import "SearchQuestionsTVC.h"
 @interface JSONParser ()
 @property (weak, nonatomic) NSArray* queries;
 @end
@@ -27,7 +28,8 @@
         SOQuery *theQuery = [[SOQuery alloc] init];
         theQuery.myQuestion = anItem[@"title"];
         NSDictionary *ownerDictionary = anItem[@"owner"];
-          NSURL *profileImageURL = ownerDictionary[@"profile_image"];
+          NSString *profileImageString = ownerDictionary[@"profile_image"];
+        NSURL * profileImageURL = [[NSURL alloc] initFileURLWithPath:profileImageString];
           [self theImageFromURL:profileImageURL toSOQuery:theQuery];
         
           [queries addObject:theQuery];
@@ -37,11 +39,10 @@
 } //parseQueriesFromJSON
 
 +(void)theImageFromURL: (NSURL *)url toSOQuery:(SOQuery*)query{
-  
   dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
     NSData *imageData = [[NSData alloc]initWithContentsOfURL:url];
      UIImage *test  = [UIImage imageWithData:imageData];
-    
+    query.myAvatar = test;
     dispatch_async(dispatch_get_main_queue(), ^{
       // Update the UI
       
