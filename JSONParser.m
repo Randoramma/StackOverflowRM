@@ -22,31 +22,28 @@
   
   if(!jsonError) {
     
-    NSMutableArray *jsonData = theData[@"items"];
-    for (NSMutableArray *itemArray in jsonData) {
-      for (NSDictionary *itemDictionary in itemArray) {
-        for (NSDictionary *ownerDictionary in itemDictionary[@"owners"]) {
-          NSString *profileImage = ownerDictionary[@"profile_image"];
-          NSURL *imageURL = [NSURL URLWithString:profileImage];
-          SOQuery *theQuery = [[SOQuery alloc] init];
-          [self theImageFromURL:imageURL toSOQuery:theQuery];
+    NSMutableArray *dataItems = theData[@"items"];
+      for (NSDictionary *anItem in dataItems) {
+        SOQuery *theQuery = [[SOQuery alloc] init];
+        theQuery.myQuestion = anItem[@"title"];
+        NSDictionary *ownerDictionary = anItem[@"owner"];
+          NSURL *profileImageURL = ownerDictionary[@"profile_image"];
+          [self theImageFromURL:profileImageURL toSOQuery:theQuery];
+        
           [queries addObject:theQuery];
-        } // for loop 3
-      } // for loop2
     } // for loop1
   } // if no jsonError
   return queries;
 } //parseQueriesFromJSON
 
-+(void)theImageFromURL: (NSURL *)url toSOQuery: (SOQuery*)query{
++(void)theImageFromURL: (NSURL *)url toSOQuery:(SOQuery*)query{
   
-  NSURL *theURL = url;
-  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-    NSData *imageData = [NSData dataWithContentsOfURL:theURL];
+  dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
+    NSData *imageData = [[NSData alloc]initWithContentsOfURL:url];
+     UIImage *test  = [UIImage imageWithData:imageData];
     
     dispatch_async(dispatch_get_main_queue(), ^{
       // Update the UI
-      query.myAvatar = [UIImage imageWithData:imageData];
       
     });
   });

@@ -7,6 +7,7 @@
 //
 
 #import "StackOverFlowService.h"
+#import "JSONParser.h"
 
 @implementation StackOverFlowService
 
@@ -23,7 +24,16 @@
     searchURL = [searchURL stringByAppendingString:[NSString stringWithFormat:@"&site=stackoverflow"]];
   NSLog(@"%@", searchURL);
   [[[NSURLSession sharedSession] dataTaskWithURL:[NSURL URLWithString:searchURL] completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
-    NSLog(@"%@", response); 
+    
+    if(!error) {
+      NSArray *theReturnedObjects = [JSONParser parseQueriesFromJSON:data];
+      completionHandler(theReturnedObjects, nil);
+    } else {
+      
+      completionHandler(nil, @"There was an error");
+    }
+    #warning Delete NSLog statement.
+    NSLog(@"%@", response);
   }] resume];
 
 }
