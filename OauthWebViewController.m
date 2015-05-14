@@ -35,6 +35,9 @@
   decisionHandler(WKNavigationActionPolicyAllow);
   // if the return URL contains the keywords @"access_token" then we have recieved a good key.
   
+  
+  
+  // AFNetworking will replace much of this code VVV // 
   if ([theURL.description containsString:@"access_token"]) {
     // parse up the return string to recieve our key.
     NSArray *theComponents = [[theURL description] componentsSeparatedByString:@"="];

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6oM-da-UCe">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Burger Container View Controller-->
@@ -141,21 +142,55 @@
             </objects>
             <point key="canvasLocation" x="1446" y="1077"/>
         </scene>
-        <!--Search Questions View Controller-->
+        <!--Search QuestionsTVC-->
         <scene sceneID="Evs-js-v64">
             <objects>
-                <viewController storyboardIdentifier="SearchVC" id="dhH-ad-bZu" customClass="SearchQuestionsViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchVC" id="dhH-ad-bZu" customClass="SearchQuestionsTVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oN2-Nt-NTj"/>
                         <viewControllerLayoutGuide type="bottom" id="Sod-1u-Zh4"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CBh-yQ-RFw">
+                    <view key="view" contentMode="scaleToFill" id="CBh-yQ-RFw" customClass="UITableView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="B9J-FQ-Kwz">
+                                <rect key="frame" x="0.0" y="108" width="600" height="492"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="B9J-FQ-Kwz" secondAttribute="trailing" constant="-16" id="HrW-bM-2tT"/>
+                            <constraint firstItem="B9J-FQ-Kwz" firstAttribute="top" secondItem="oN2-Nt-NTj" secondAttribute="bottom" constant="44" id="Up4-Th-BgY"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="B9J-FQ-Kwz" secondAttribute="bottom" id="ebj-zF-REw"/>
+                            <constraint firstItem="B9J-FQ-Kwz" firstAttribute="leading" secondItem="CBh-yQ-RFw" secondAttribute="leadingMargin" constant="-16" id="vuY-Jn-Sgu"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="kty-x3-DkD"/>
+                    <connections>
+                        <outlet property="searchTableView" destination="B9J-FQ-Kwz" id="ttW-cj-wa7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aaT-jT-Amd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2264" y="415"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X2M-r6-y1u">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8vY-rp-Vna" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="48M-jE-OEF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="dhH-ad-bZu" kind="relationship" relationship="rootViewController" id="KRQ-5F-dzC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gdD-z1-M4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1452" y="415"/>
         </scene>
