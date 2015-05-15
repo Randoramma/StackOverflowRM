@@ -10,6 +10,6 @@
 
 @interface SearchQuestionsTVC : UITableViewController
 
-
+-(void) addConstraintToSearchBarControllerView: (UIView *)tableView withViews:(NSDictionary *)views;
 
 @end

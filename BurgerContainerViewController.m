@@ -22,7 +22,7 @@
 
 @end
 
-const int MARGIN_BUFFER = 16;
+const int MARGIN_BUFFER = 8;
 const int BURGER_SIDE_LENGTH = 50;
 const int THIRD_OF_SCREEN = 3;
 const float PAN_OPEN_POINT = 0.75;
@@ -58,7 +58,7 @@ const float FAST_ANIMATION_DURATION = 0.2;
   [self.topViewController.view addGestureRecognizer:self.slideGesture];
   
   // instantiate the burger button.
-  self.burgerButton = [[UIButton alloc] initWithFrame:CGRectMake(MARGIN_BUFFER, MARGIN_BUFFER, BURGER_SIDE_LENGTH, BURGER_SIDE_LENGTH)];
+  self.burgerButton = [[UIButton alloc] initWithFrame:CGRectMake(MARGIN_BUFFER, MARGIN_BUFFER+30, BURGER_SIDE_LENGTH, BURGER_SIDE_LENGTH)];
   [self.burgerButton setBackgroundImage:[UIImage imageNamed:@"burger"] forState:UIControlStateNormal];
   [self.burgerButton addTarget:self action:@selector(burgerButtonPressed) forControlEvents:UIControlEventTouchUpInside];
   // add the burger button to the topViewVC.

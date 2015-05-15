@@ -19,6 +19,7 @@
 		D064CCF91B01CA6B00771D60 /* OauthWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCF81B01CA6B00771D60 /* OauthWebViewController.m */; };
 		D064CCFF1B01CAB500771D60 /* MyQuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D064CCFE1B01CAB500771D60 /* MyQuestionsViewController.m */; };
 		D067260D1B0512D00011077D /* SearchQuestionsTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D067260C1B0512D00011077D /* SearchQuestionsTVC.m */; };
+		D06726101B0641C60011077D /* SearchQuestionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D067260F1B0641C60011077D /* SearchQuestionCell.m */; };
 		D0F0ACEC1B030F05004A8A04 /* StackOverFlowService.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F0ACEB1B030F05004A8A04 /* StackOverFlowService.m */; };
 		D0F0ACEF1B03B351004A8A04 /* JSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F0ACEE1B03B351004A8A04 /* JSONParser.m */; };
 		D0F0ACF21B03B77D004A8A04 /* SOQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F0ACF11B03B77D004A8A04 /* SOQuery.m */; };
@@ -64,6 +65,8 @@
 		D064CD021B025CDB00771D60 /* protected.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = protected.h; path = ../protected.h; sourceTree = "<group>"; };
 		D067260B1B0512D00011077D /* SearchQuestionsTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SearchQuestionsTVC.h; path = ../SearchQuestionsTVC.h; sourceTree = "<group>"; };
 		D067260C1B0512D00011077D /* SearchQuestionsTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SearchQuestionsTVC.m; path = ../SearchQuestionsTVC.m; sourceTree = "<group>"; };
+		D067260E1B0641C60011077D /* SearchQuestionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchQuestionCell.h; sourceTree = "<group>"; };
+		D067260F1B0641C60011077D /* SearchQuestionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchQuestionCell.m; sourceTree = "<group>"; };
 		D0F0ACEA1B030F05004A8A04 /* StackOverFlowService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StackOverFlowService.h; path = ../StackOverFlowService.h; sourceTree = "<group>"; };
 		D0F0ACEB1B030F05004A8A04 /* StackOverFlowService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StackOverFlowService.m; path = ../StackOverFlowService.m; sourceTree = "<group>"; };
 		D0F0ACED1B03B351004A8A04 /* JSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JSONParser.h; path = ../JSONParser.h; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 		D064CCB91B01C79F00771D60 = {
 			isa = PBXGroup;
 			children = (
+				D067260E1B0641C60011077D /* SearchQuestionCell.h */,
+				D067260F1B0641C60011077D /* SearchQuestionCell.m */,
 				D064CCC41B01C79F00771D60 /* StackOverflowRM */,
 				D064CCDE1B01C79F00771D60 /* StackOverflowRMTests */,
 				D064CCC31B01C79F00771D60 /* Products */,
@@ -358,6 +363,7 @@
 				D064CCED1B01C97500771D60 /* BurgerContainerViewController.m in Sources */,
 				D064CCC81B01C79F00771D60 /* main.m in Sources */,
 				D064CCFF1B01CAB500771D60 /* MyQuestionsViewController.m in Sources */,
+				D06726101B0641C60011077D /* SearchQuestionCell.m in Sources */,
 				D0F0ACEF1B03B351004A8A04 /* JSONParser.m in Sources */,
 				D064CCF61B01CA5300771D60 /* LoginViewController.m in Sources */,
 			);
